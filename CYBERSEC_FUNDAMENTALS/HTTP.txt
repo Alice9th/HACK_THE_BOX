@@ -1,3 +1,27 @@
 Protocolo HTTP
 
+HTTP is an application-level protocol used to access resources over the World Wide Web. The term hypertext stands for text containing links to other resources and text that can be easily interpreted by the readers.
+
+HTTP communication consists of a client and a server, where the client requests the server for a resource. The server processes the requests and returns the requested resource.
+
+he default port for HTTP communication is 80.
+
+Uniform Resource Locator (URL): Resources over HTTP are accessed via a URL
+
+Component	Description
+Scheme	This is used to identify the protocol being accessed by the client. This is usually http or https.
+User Info	This is an optional component that contains credentials in the form username:password, which is used to authenticate to the host.
+Host	The host signifies the resource location. This can be a hostname or an IP address. A colon separates a host and port.
+Port	URLs without a port specified point to the default port 80. If the HTTP server port isn't running on port 80, it can be specified in the URL.
+Path	This points to the resource being accessed, which can be a file or a folder. If there no path specified, the server returns the default index document hosted by it (for example, index.html).
+Query String	The query string is preceded by a question mark (?). This is another optional component that is used to pass information to the resource. A query string consists of a parameter and a value. In the example above, the parameter is login, and its value is true. There can be multiple parameters separated by an ampersand (&).
+Fragments	This is processed by browsers on the client-side to locate sections within the primary resource.
+
+
+DNS (Domain Name Resolution) 
+
+A server can't communicate without an IP address.
+
+
+
 
