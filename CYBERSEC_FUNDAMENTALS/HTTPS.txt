@@ -1,0 +1,12 @@
+** network analyzer such as Wireshark**
+
+ HTTPS (HTTP Secure) protocol. When this protocol is enabled, all communication between the client (user accessing a web application via their web browser), and the webserver that hosts the web application, is encrypted. When HTTPS is implemented on a web application, it becomes impossible for anyone to intercept and analyze the traffic and capture information such as credentials and other sensitive data.
+
+Websites that enforce HTTPS can be identified through https:// in the URL (i.e., https://www.google.com) as well as the lock icon in the address bar of the web browser, to the left of the URL.
+
+The default port for HTTPS is 443, which is preferred by browsers over HTTP port 80, provided there are no misconfigurations that allow a user to browse an insecure HTTP version of a website instead of the HTTPS version.
+A request is sent to port 80 first, which is the unencrypted HTTP protocol. The server detects this and redirects the client to secure HTTPS port 443 instead. This is done via the 301 Moved Permanently response code.
+
+Depending on the circumstances, an attacker may be able to perform an HTTP downgrade attack, which downgrades HTTPS communication to HTTP. This is done by setting up a man-in-the-middle (MITM) attack and proxying (passing) all traffic through the attacker's host without the user's knowledge. A successful downgrade attack would result in the cleartext transfer of HTTP data, which the attacker can log and later examine or manipulate for malicious purposes.
+
+

@@ -23,5 +23,7 @@ DNS (Domain Name Resolution)
 A server can't communicate without an IP address.
 
 
+One of the major drawbacks of HTTP is that all data is transferred in clear text, meaning anyone between the source and destination can perform a Man-in-the-middle (MiTM) attack to view the transferred data.
+
 
 
